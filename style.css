@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p, select, input, th, td {
+    font-family: Roboto;
+}
+
+::-webkit-scrollbar {
+    background-color: black;
+    color: white;
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background: linear-gradient(25deg, rgba(2,0,36,1) 0%, rgba(2,33,1,1) 35%, rgba(0,78,255,1) 80%, rgba(255,255,255,1) 100%);
+}
+
+.container .navigation {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.container .navigation .painel-logo {
+    color: white;
+    margin-right: 25px;
+}
+
+.container .navigation ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.container .navigation li {
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px;
+    border-color: rgba(255,255,255,0.1);
+    cursor: pointer;
+    transition: 200ms;
+    padding: 20px;
+}
+
+.container .navigation li:hover {
+    border-color: rgba(255,255,255,1);
+}
+
+.container .navigation li a {
+    pointer-events: none;
+}
+
+.container .filters {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.container .filters .filter-header-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .filters .activity-header {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.container .filters .activity-body {
+    display: flex;
+}
+
+.container .filters .activity-body ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.container .filters .activity-body ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+    margin: 6px 10px;
+    padding: 20px 27%;
+}
+
+.container .filters .activity-body ul li.total-activity {
+    background-color: rgb(184, 187, 4);
+    border-radius: 20px;
+}
+
+.container .filters .activity-body ul li.online-activity {
+    background-color: rgb(0, 177, 0);
+    border-radius: 20px;
+}
+
+.container .filters .activity-body ul li.offline-activity {
+    background-color: rgb(177, 0, 0);
+    border-radius: 20px;
+}
+
+.container .filters .filter-header-left h1 {
+    margin-left: 12px;
+    color: white;
+}
+
+.container .filters .filter-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .filters .filter-list h1 {
+    color: white;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 46px;
+}
+
+.container .filters .filter-body select {
+    padding: 8px 46px;
+    border: none;
+    font-size: 18px;
+    border-radius: 16px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.container .filters .filter-body select:hover {
+    color: black;
+    background-color: rgba(255,255,255,1);
+}
+
+.container .filters .filter-body option {
+    background-color: rgba(0,0,0,1);
+    color: white;
+    border: none;
+}
+
+.container .entries {
+    padding: 16px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.container .entries .entries-header {
+    display: flex;
+    align-items: center;
+}
+
+.container .entries .entries-header input {
+    padding: 6px 12px;
+    font-size: 16px;
+    outline: none;
+    width: 50%;
+    max-width: 400px;
+    min-width: 250px;
+}
+
+.container .entries .entries-header .search {
+    margin-right: 12px;
+    cursor: pointer;
+} 
+
+.container .entries ul {
+    list-style-type: none;
+}
+
+.container .entries ul li div {
+    padding: 12px 0;
+    margin-top: 12px;
+}
+
+.container .entries ul li div h1 {
+    color: white;
+}
+
+.container .entries .table-div {
+    margin-top: 20px;
+    overflow: auto;
+    height: 500px;
+}
+
+.container .entries .table-div table {
+    margin-top: 10px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.container .entries th {
+    border: solid #FFFFFF 1px;
+    padding: 12px;
+    color: white;
+}
+
+.container .entries td {
+    border: solid #FFFFFF 1px;
+    padding: 6px;
+    color: white;
+    text-align: center;
+}
+
+.container .entries td img {
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.container .entries td img:hover {
+    opacity: 0.4;
+}
+
+@media (max-width: 1120px){
+    .container .filters .activity-body ul li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 6px;
+        margin: 6px 10px;
+        padding: 20px 12%;
+    }
+}
+
+@media (max-width: 680px){
+    .container .filters .activity-body{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 560px){
+    .painel-logo {
+        display: none;
+    }
+
+    .container .navigation {
+        height: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0,0,0,0.6);
+    }
+
+    .container .navigation li {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px;
+        border-color: rgba(255,255,255,0.1);
+        cursor: pointer;
+        transition: 200ms;
+        padding: 20px;
+    }
+}

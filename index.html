@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel - Botnet (Crawler)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/monitor.svg" alt="Vítimas">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/list.svg" alt="Registros">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/user.svg" alt="Usuários">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/settings.svg" alt="Configurações">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/tool.svg" alt="Builder">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/log-out.svg" alt="Sair">
+                    </a>
+                </li>
+            </ul>
+            <h1 class="painel-logo">Painel BotNet</h1>
+        </nav>
+        <div class="filters">
+            <div class="filter-header">
+                <div class="filter-header-left">
+                    <div class="activity-header">
+                        <img src="assets/img/activity.svg" alt="Atividades / Filtro">
+                        <h1>Atividade Recente</h1>
+                    </div>
+                    <div class="activity-body">
+                        <ul>
+                            <li class="total-activity">
+                                <img src="assets/img/clipboard.svg" alt="Totais"><h1>Totais:</h1><h1>0</h1>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="online-activity">
+                                <img src="assets/img/wifi.svg" alt="Online"><h1>Online:</h1><h1>0</h1>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li class="offline-activity">
+                                <img src="assets/img/cast.svg" alt="Offline"><h1>Offline</h1><h1>0</h1>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-list">
+                <h1>Filtros</h1>
+                <div class="filter-body">
+                    <select>
+                        <option>ID</option>
+                    </select>
+                    <select>
+                        <option>IP@IPV4</option>
+                    </select>
+                    <select>
+                        <option>Dummy@PC</option>
+                    </select>
+                    <select>
+                        <option>OS</option>
+                    </select>
+                    <select>
+                        <option>País</option>
+                    </select>
+                    <select>
+                        <option>Data</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="entries">
+            <div class="entries-header">
+                <img class="search" src="assets/img/search.svg" alt="Pesquisar">
+                <input type="text" placeholder="Pesquisar entrada">
+            </div>
+            <div class="table-div">
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>IP@IPV4</th>
+                        <th>User@PC</th>
+                        <th>OS</th>
+                        <th>País</th>
+                        <th>Data</th>
+                        <th>Ver</th>
+                        <th>Status</th>
+                        <th>Options</th>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>001</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                    <tr>
+                        <td>005</td>
+                        <td>IP@0.0.0.0</td>
+                        <td>Dummy@PC</td>
+                        <td>Windows</td>
+                        <td>Nowhere</td>
+                        <td>13/11/2020</td>
+                        <td><img src="/assets/img/eye.svg"></td>
+                        <td><img src="/assets/img/list.svg"></td>
+                        <td><img src="/assets/img/settings.svg"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
